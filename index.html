@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2d193f">
+  <meta name="description" content="A pastel lavender, classical antiquity-inspired three-click origami anniversary card.">
+  <title>Amor Æternum · Anniversary for Le Ha Khanh Binh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600&family=Italiana&family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-phase="0" data-screen="card">
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="mist mist-one"></div><div class="mist mist-two"></div>
+    <div class="stars" id="stars"></div>
+    <div class="column column-left"></div><div class="column column-right"></div>
+    <div class="background-art background-art-left"><img data-art="venus" alt=""></div>
+    <div class="background-art background-art-right"><img data-art="canova" alt=""></div>
+  </div>
+
+  <main class="experience" id="experience">
+    <header class="masthead">
+      <span class="masthead-rule"></span>
+      <span class="mini-label">AMOR <span class="tiny-star">✧</span> ÆTERNUM</span>
+      <span class="masthead-rule"></span>
+      <h1>For the one my soul chose.</h1>
+      <p>A love letter, folded through time.</p>
+    </header>
+
+    <section class="card-scene" aria-label="Thiệp origami, nhấn ba lần để mở">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="paper-shadow" aria-hidden="true"></div>
+
+      <div class="origami" id="origami" tabindex="0" role="button" aria-label="Click để mở thiệp. Bước 1 trong 3">
+        <div class="paper-sheet">
+          <div class="paper-engraving" aria-hidden="true"></div>
+          <div class="corner-art corner-art-one"><img data-art="primavera" alt=""></div>
+          <div class="corner-art corner-art-two"><img data-art="graces" alt=""></div>
+          <div class="corner-art corner-art-three"><img data-art="mars" alt=""></div>
+          <div class="corner-art corner-art-four"><img data-art="roman" alt=""></div>
+          <div class="center-geometry" aria-hidden="true"></div>
+          <div class="filigree top-filigree" aria-hidden="true">❦ &nbsp; ✦ &nbsp; ❦</div>
+          <div class="filigree bottom-filigree" aria-hidden="true">❦ &nbsp; ✦ &nbsp; ❦</div>
+
+          <!-- Click 1: two side V-fold wings, exactly like the first opening in the reference -->
+          <div class="flap side-flap side-flap-left" aria-hidden="true"><div class="flap-inlay"><span>AMOR</span><b>❦</b></div></div>
+          <div class="flap side-flap side-flap-right" aria-hidden="true"><div class="flap-inlay"><span>ETERNAL</span><b>✧</b></div></div>
+
+          <!-- Click 2: top/bottom triangular paper corners unfold -->
+          <div class="flap cap-flap cap-flap-top" aria-hidden="true"><span>☾</span></div>
+          <div class="flap cap-flap cap-flap-bottom" aria-hidden="true"><span>✦</span></div>
+
+          <!-- Click 3: diamond medallion unfolds and the letter rises from the centre -->
+          <div class="inner-petal petal-n" aria-hidden="true"></div>
+          <div class="inner-petal petal-s" aria-hidden="true"></div>
+          <div class="inner-petal petal-w" aria-hidden="true"></div>
+          <div class="inner-petal petal-e" aria-hidden="true"></div>
+          <div class="wax-seal" aria-hidden="true"><div class="seal-inner"><span class="seal-orbit">✦ &nbsp; ❧ &nbsp; ✦</span><strong>∞</strong><span class="seal-word">AD INFINITUM</span></div></div>
+
+          <div class="letter-book" id="letterBook">
+            <div class="letter-leaf letter-leaf-left"></div>
+            <div class="letter-leaf letter-leaf-right"></div>
+            <div class="letter-frame">
+              <div class="letter-topline">COR · UNUM · ANIMA · UNA</div>
+              <div class="portrait-medallion"><img data-art="canova" alt="Tượng Cupid và Psyche của Antonio Canova"></div>
+              <div class="letter-to">To my beloved</div>
+              <h2 id="letterTitle"></h2>
+              <div id="letterText" class="letter-text"></div>
+              <p class="letter-signature" id="letterSignature"></p>
+              <div class="letter-scroll-bottom">✥ &nbsp; A M O R &nbsp; ✥</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-label floating-label-left">Aphrodite <span>✧</span></div>
+      <div class="floating-label floating-label-right"><span>✧</span> Psyche</div>
+    </section>
+
+    <footer class="interaction-bar" id="interactionBar">
+      <p id="stageHeadline" class="stage-headline">Một chiếc thư nhỏ gửi người thương</p>
+      <p id="stageDescription" class="stage-description">Ba lần chạm để từng nếp gấp mở ra...</p>
+      <button id="openNextBtn" class="open-btn" type="button"><span class="button-spark">✧</span><span id="openBtnText">Mở nếp gấp thứ nhất</span><span class="button-arrow">↗</span></button>
+      <div class="progress-row" aria-label="Tiến độ mở thiệp">
+        <div class="progress-dot" data-step="1"></div><div class="progress-dot" data-step="2"></div><div class="progress-dot" data-step="3"></div>
+        <span id="progressText">0 / 3 nếp gấp</span>
+      </div>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-label="Bật hoặc tắt nhạc" title="Bật hoặc tắt nhạc"><span id="soundIcon">♫</span> <span id="soundText">Nhạc nền</span></button>
+    </footer>
+  </main>
+
+  <section class="cinema overlay-screen" id="cinema" aria-label="Video kỷ niệm" aria-hidden="true">
+    <div class="cinema-grain" aria-hidden="true"></div>
+    <div class="cinema-caption">OUR STORY <span>✧</span> OUR FOREVER</div>
+    <div class="cinema-card" id="cinemaCard">
+      <div class="cinema-frame-border"></div>
+      <video id="memoryVideo" playsinline preload="auto" controls controlsList="nodownload" aria-label="Video kỷ niệm của chúng mình"></video>
+      <div class="video-error" id="videoError" hidden>
+        <div class="video-error-icon">❦</div>
+        <strong>Khoảnh khắc của chúng mình</strong>
+        <p>Chọn video từ máy hoặc dùng video demo.</p>
+        <button type="button" id="chooseVideoBtn" class="outline-btn">Chọn video local</button>
+      </div>
+    </div>
+    <div class="cinema-actions">
+      <button type="button" id="replaceVideoBtn">♧ Đổi video trên máy</button>
+      <button type="button" id="playVideoBtn" hidden>▶ Phát video</button>
+      <button type="button" id="skipVideoBtn">Bỏ qua đến lời cuối ↗</button>
+    </div>
+  </section>
+
+  <section class="finale overlay-screen" id="finale" aria-hidden="true" aria-label="Lời chúc cuối">
+    <div class="final-stars" id="finalStars" aria-hidden="true"></div>
+    <div class="finale-bloom" aria-hidden="true"></div>
+    <div class="finale-inner">
+      <div class="finaleyear">✧ &nbsp; AMOR IN AETERNUM &nbsp; ✧</div>
+      <h2 class="neon-title" id="finalTitle">Happy anniversary</h2>
+      <p class="neon-message" id="finalMessage">I love you, my wife<br><em>Le Ha Khanh Binh</em></p>
+      <div class="neon-divider"><span></span><b>♡</b><span></span></div>
+      <div class="rings-stage" aria-label="Hai chiếc nhẫn cưới bạch kim đang xoay">
+        <div class="ring-bloom" aria-hidden="true"></div>
+        <canvas id="ringsCanvas" width="660" height="360" role="img" aria-label="Cặp nhẫn bạch kim 3D xoay lồng vào nhau"></canvas>
+      </div>
+      <p class="ring-caption">TWO SOULS <span>⋆</span> ONE ETERNITY</p>
+      <button id="restartBtn" type="button" class="restart-btn">↺ &nbsp; Xem lại từ đầu</button>
+      <p class="design-credit">Inspired by classical love · rings illustrated in 3D code, Piaget platinum aesthetic</p>
+    </div>
+  </section>
+
+  <audio id="backgroundMusic" preload="auto" loop></audio>
+  <input type="file" id="videoFileInput" accept="video/*" hidden>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+</body>
+</html>

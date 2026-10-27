@@ -1,0 +1,50 @@
+[
+  {
+    "key": "venus",
+    "name": "Nascita_di_Venere_Botticelli.jpg",
+    "local": "assets/images/venus.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Nascita_di_Venere_Botticelli.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Nascita_di_Venere_Botticelli.jpg",
+    "license": "Public Domain"
+  },
+  {
+    "key": "canova",
+    "name": "Antonio Canova - Psyche revived by the kiss of Love, Marble, 1793.jpg",
+    "local": "assets/images/canova.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Antonio_Canova_-_Psyche_revived_by_the_kiss_of_Love%2C_Marble%2C_1793.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Antonio_Canova_-_Psyche_revived_by_the_kiss_of_Love,_Marble,_1793.jpg",
+    "license": "Public Domain / PD-self"
+  },
+  {
+    "key": "primavera",
+    "name": "Botticelli_Primavera.jpg",
+    "local": "assets/images/primavera.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Botticelli_Primavera.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Botticelli_Primavera.jpg",
+    "license": "Public Domain"
+  },
+  {
+    "key": "graces",
+    "name": "Raphaël - Les Trois Grâces - Google Art Project.jpg",
+    "local": "assets/images/graces.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Rapha%C3%ABl_-_Les_Trois_Gr%C3%A2ces_-_Google_Art_Project.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Raphaël_-_Les_Trois_Grâces_-_Google_Art_Project.jpg",
+    "license": "Public Domain"
+  },
+  {
+    "key": "mars",
+    "name": "Sandro Botticelli - Venus and Mars - WGA2776.jpg",
+    "local": "assets/images/mars.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Sandro_Botticelli_-_Venus_and_Mars_-_WGA2776.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_Venus_and_Mars_-_WGA2776.jpg",
+    "license": "Public Domain"
+  },
+  {
+    "key": "roman",
+    "name": "Fresco depicting winged Cupid and Psyche from the west wall of the exedra in the Casa di Bronzi aka Casa della Parete Nera in Pompeii by Wilhelm Zahn.jpg",
+    "local": "assets/images/roman.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Fresco_depicting_winged_Cupid_and_Psyche_from_the_west_wall_of_the_exedra_in_the_Casa_di_Bronzi_aka_Casa_della_Parete_Nera_in_Pompeii_by_Wilhelm_Zahn.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Fresco_depicting_winged_Cupid_and_Psyche_from_the_west_wall_of_the_exedra_in_the_Casa_di_Bronzi_aka_Casa_della_Parete_Nera_in_Pompeii_by_Wilhelm_Zahn.jpg",
+    "license": "Public Domain"
+  }
+]

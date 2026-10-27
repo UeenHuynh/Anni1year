@@ -1,0 +1,5 @@
+Hãy đặt video của hai bạn ở đây với tên:
+our-story.mp4
+
+Sửa videoFile trong config.js nếu khác.
+Nếu không tìm thấy file này, thiệp tự dùng demo-memory.mp4 và sau đó chuyển đến lời chúc cuối.

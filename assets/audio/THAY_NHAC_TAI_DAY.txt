@@ -1,0 +1,5 @@
+Hãy đặt file MP3 bạn có quyền sử dụng ở đây với tên:
+ngai-ngung-khong-the-cat-loi-remix.mp3
+
+Sửa tên / đường dẫn trong config.js nếu tên khác.
+Nếu không có file đó, thiệp sử dụng pastel-waltz-demo.mp3 (nhạc mẫu tự tổng hợp).
